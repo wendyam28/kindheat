@@ -28,11 +28,3 @@ Or use the contact form on the homepage.
 ---
 
 KindHeat™ is powered by resourcefulness, rapid prototyping, and a commitment to solving overlooked problems with dignity and speed.
-
-
-
-🧠 What You Should Do Next
-- Go to your repo → Click README.md
-- Click Edit
-- Paste the content above
-- Click Commit changes
