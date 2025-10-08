@@ -1,6 +1,3 @@
-Got it, WENDYAM — let’s fix that right now. Your README.md is the front door of your GitHub repo. It should clearly explain what KindHeat™ is, why it matters, and how people can get involved.
-
-✅ Copy-Paste README.md for Your Repo
 # KindHeat™ | Humanitarian Heater Kits
 
 KindHeat™ is a zero-budget, dignity-driven innovation delivering battery-powered heater kits to unhoused individuals, outreach vans, and emergency shelters. Built in Buffalo, NY, this project aims to restore warmth and dignity through scalable, portable tech.
@@ -39,4 +36,3 @@ KindHeat™ is powered by resourcefulness, rapid prototyping, and a commitment t
 - Click Edit
 - Paste the content above
 - Click Commit changes
-Want me to generate a version for outreach partners or grant reviewers? I can tailor it for any audience.
