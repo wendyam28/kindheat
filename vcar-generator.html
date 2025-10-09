@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>vCard + QR Code Generator</title>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+</head>
+<body>
+  <h2>Download vCard & QR Code</h2>
+  <button onclick="generateVCard()">Download vCard</button>
+  <div id="qrcode"></div>
+
+  <script>
+    function generateVCard() {
+      const vCardData = `
+BEGIN:VCARD
+VERSION:3.0
+FN:WENDYAM BICTOGO
+ORG:KindHeat™
+TITLE:Founder & Inventor
+TEL:+1-716-449-5989
+EMAIL:contact@kindheat.org
+ADR:249 Newburg Ave, Buffalo, NY
+END:VCARD
+      `.trim();
+
+      const blob = new Blob([vCardData], { type: 'text/vcard' });
+      const url = URL.createObjectURL(blob);
+
+      // Trigger download
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'KindHeat.vcf';
+      a.click();
+
+      // Generate QR code linking to vCard file (or website)
+      QRCode.toCanvas(document.getElementById('qrcode'), 'https://kindheat.org', function (error) {
+        if (error) console.error(error);
+        console.log('QR code generated!');
+      });
+    }
+  </script>
+</body>
+</html>
